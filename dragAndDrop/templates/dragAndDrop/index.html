@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="{% static 'dragAndDrop/style.css' %}">
+    <script src="{% static 'dragAndDrop/main.js' %}" defer></script>
+    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+    <title>Dropzone</title>
+</head>
+<body>
+    <h1> Dropzone </h1>
+    <form action="upload/" method='POST' class="dropzone dz" id="my-dropzone">
+        {% csrf_token %}
+        <div class="fallback">
+            <input name="file" type="file" multiple/>
+        </div>
+    </form>
+    <a href="{% url 'display' %}" class="button"><span>DISPLAY</span></a>
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿html {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    color: black;
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 1px solid black;
+    display: block;
+}
+
+.button {
+    position: absolute;
+    bottom: 5%;
+    width: 10%;
+    height: 5%;
+    margin-left: 45%;
+    text-align: center;
+    margin-right: 45%;
+    display: block;
+    background-color: darkgreen;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.bttwelve {
+    bottom: 12%;
+}
+
+.button span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5%;
+    text-decoration: none;
+    color: white;
+}
+
+.dz {
+    width: 60% !important;
+    height: 60% !important;
+    position: absolute !important;
+    top: 18% !important;
+    left: 20% !important;
+    border: dashed !important;
+    border-radius: 0.5em !important;
+    border-width: 2px !important;
+}
+
+.dz:hover {
+    background-color: aliceblue !important;
+}
+
+.display {
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    height: 60%;
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.display img {
+    height: 100%;
+    border: 1px solid black;
+    display: inline-block;
+}
